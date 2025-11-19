@@ -70,7 +70,7 @@ selected_message = random.choice(COMMIT_MESSAGES)
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 random_number = random.randint(100000, 999999)
 
-entry = f"{timestamp} | Rand:{random_number} | Msg:{selected_message}\n"
+entry = f"{selected_message}\n"
 
 # --- Write to log file ---
 with open("activity_log.txt", "a") as f:
