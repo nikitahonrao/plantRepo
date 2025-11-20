@@ -5,9 +5,9 @@ import sys
 # --- Commit chances (for 10–15 commits/day) ---
 # Action runs 24 times/day (every hour)
 # Commit probability tuned to ~45% chance per run
-if random.random() > 0.40:
-    print("Skipping this run — randomness.")
-    sys.exit(0)
+# if random.random() > 0.40:
+#     print("Skipping this run — randomness.")
+#     sys.exit(0)
 
 # --- Large commit message list ---
 COMMIT_MESSAGES = [
