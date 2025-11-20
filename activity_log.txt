@@ -32,3 +32,4 @@
 🟥 Auto commit pulse
 🌋 Cycle spike record
 🌲 Forest cycle tweak
+🧪 Auto experiment log
