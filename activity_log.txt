@@ -26,3 +26,4 @@
 🧿 Regenerated pattern
 🍃 Background update
 🌲 Forest cycle tweak
+🔭 Micro observation log
