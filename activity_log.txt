@@ -38,3 +38,4 @@
 🌙 Night cycle patch
 🟩 Data regen
 🟥 Auto commit pulse
+🪴 Greenhouse log
