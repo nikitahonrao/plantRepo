@@ -57,3 +57,4 @@
 🌏 Daily rotation mark
 🧩 Auto patch piece
 📈 Log refresh
+🔋 Activity tick
