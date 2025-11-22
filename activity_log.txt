@@ -90,3 +90,4 @@
 📚 Data line added
 ⭐ Auto graph bump
 🌿 Routine plant cycle log
+🟦 Hourly log refresh
