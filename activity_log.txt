@@ -82,3 +82,4 @@
 🔋 Activity tick
 🌙 Night cycle patch
 🌙 Night cycle patch
+⚙️ Scheduled maintenance
