@@ -122,3 +122,4 @@
 🔋 Activity tick
 ✨ Small refinement
 🪴 Greenhouse log
+🌬️ Airflow update
