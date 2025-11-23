@@ -130,3 +130,4 @@
 🧠 Pattern check
 🌿 Routine plant cycle log
 ✨ Small refinement
+🌙 Night cycle patch
