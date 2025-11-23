@@ -121,3 +121,4 @@
 🔧 Small maintenance change
 🔋 Activity tick
 ✨ Small refinement
+🪴 Greenhouse log
