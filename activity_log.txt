@@ -153,3 +153,4 @@
 🌾 Updated vegetation data
 📝 Daily stat bump
 🍃 Background update
+🪴 Greenhouse log
