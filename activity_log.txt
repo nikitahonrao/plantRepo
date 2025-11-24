@@ -156,3 +156,4 @@
 🪴 Greenhouse log
 🔄 Automated sync
 🔭 Micro observation log
+🌿 Routine plant cycle log
