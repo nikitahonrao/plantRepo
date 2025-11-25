@@ -182,3 +182,4 @@
 🔭 Micro observation log
 🧠 Pattern check
 🔋 Activity tick
+🌤️ Daily climate marker
