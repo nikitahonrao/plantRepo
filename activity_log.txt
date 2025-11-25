@@ -183,3 +183,4 @@
 🧠 Pattern check
 🔋 Activity tick
 🌤️ Daily climate marker
+🔥 System heartbeat
