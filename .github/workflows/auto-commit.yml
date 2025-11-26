@@ -1,39 +1,43 @@
-name: Auto GitHub Contributions
+name: Daily Motivational Commit
+
+on:
+  schedule:
+    - cron: "30 18 * * *" # Runs every day at 12:00 AM IST
+  workflow_dispatch:
 
 permissions:
   contents: write
-  actions: read
-  checks: write
-  
-on:
-  schedule:
-    - cron: '*/30 * * * *'   # runs every hour
-  workflow_dispatch:
 
 jobs:
-  run:
+  auto-commit:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
-
-      - name: Run updater script
-        run: python .github/scripts/updater.py
-
-      - name: Commit & Push changes
+      - name: Set Git user
         run: |
-          git config --global user.name "Om-mac"
-          git config --global user.email "185115868+Om-mac@users.noreply.github.com"
-          git add .
-          git commit -m "$(tail -n 1 activity_log.txt)" || exit 0
-          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Om-mac/Plant_factory.git
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-        
+      - name: Add motivational quote
+        run: |
+          quotes=(
+            "Believe you can and you're halfway there."
+            "Start where you are. Use what you have. Do what you can."
+            "Success is not final, failure is not fatal: It is the courage to continue that counts."
+            "Don’t watch the clock; do what it does. Keep going."
+            "Dream big and dare to fail."
+            "The future depends on what you do today."
+            "You are stronger than you think."
+            "Doubt kills more dreams than failure ever will."
+          )
+          RANDOM_QUOTE=${quotes[$RANDOM % ${#quotes[@]}]}
+          echo "$(date): $RANDOM_QUOTE" >> motivation_log.txt
+
+      - name: Commit and push changes
+        run: |
+          git add motivation_log.txt
+          git commit -m "💪 Daily Motivation Update"
+          git push
